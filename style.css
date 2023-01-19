@@ -49,7 +49,8 @@ html {
 
 .profile__out {
   position: fixed;
-  display: block;
+  /* display: block; */
+  display: none;
   padding-top: 10px;
   right: 308px;
   top: 35px;
@@ -59,4 +60,83 @@ html {
   background-color: #fac4c4b4;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
+}
+
+.section {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 244, 236);
+}
+
+.section__navigation {
+  background-color: antiquewhite;
+  border-radius: 8px;
+}
+.menu {
+  display: flex;
+  /* list-style: none; */
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu__item {
+  margin: 6px 10px 16px;
+}
+
+.menu__item-link {
+  color: black;
+  text-decoration: none;
+}
+
+.menu__item-link:hover {
+  color: brown;
+}
+
+.menu__item-link_selected {
+  color: brown;
+}
+
+.section__main {
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.pie {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: greenyellow;
+  background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+.pie::before {
+  content: ’;
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+}
+
+table {
+  /* border-collapse: collapse; */
+  border: 1.5px solid rgb(177, 176, 176);
+}
+
+th {
+  border-bottom: 1.5px solid rgb(177, 176, 176);
+}
+
+td {
+  border-bottom: 1.5px solid rgb(177, 176, 176);
+}
+
+.history_table {
+  display: none;
+}
+
+.team_info_table {
+  display: none;
 }
